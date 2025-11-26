@@ -1,0 +1,489 @@
+/* ============================================
+   MODERN DESIGN ENHANCEMENTS
+   Additional modern styles loaded after main style.css
+   ============================================ */
+
+/* Enhanced CSS Variables */
+:root {
+    /* Extended Color System */
+    --primary_dark: #1fb871;
+    --primary_light: #5cffad;
+    --secondary_color: #667eea;
+    --accent_pink: #f093fb;
+    --accent_cyan: #4facfe;
+
+    /* Modern Gradients */
+    --gradient_primary: linear-gradient(135deg, #28e98c 0%, #4facfe 100%);
+    --gradient_secondary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient_text: linear-gradient(135deg, #28e98c 0%, #667eea 100%);
+
+    /* Enhanced Shadows */
+    --shadow_glow: 0 0 30px rgba(40, 233, 140, 0.4);
+    --shadow_glow_strong: 0 0 50px rgba(40, 233, 140, 0.6);
+    --shadow_card: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+    /* Smooth Transitions */
+    --transition_smooth: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ============================================
+   ENHANCED THEME BUTTON
+   ============================================ */
+
+.theme-btn {
+    background: var(--gradient_primary) !important;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow_glow);
+    border: 2px solid transparent !important;
+}
+
+.theme-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient_secondary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.theme-btn:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: var(--shadow_glow_strong) !important;
+}
+
+.theme-btn:hover::before {
+    opacity: 1;
+}
+
+/* ============================================
+   GLASSMORPHISM EFFECTS
+   ============================================ */
+
+.left-sidebar {
+    background: rgba(31, 31, 31, 0.8) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(40, 233, 140, 0.1);
+}
+
+.menu {
+    background: rgba(31, 31, 31, 0.9) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-color: rgba(40, 233, 140, 0.3) !important;
+    transition: all 0.3s ease;
+}
+
+.subtitle:hover {
+    border-color: var(--primary_color) !important;
+    box-shadow: var(--shadow_glow);
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   PROFILE IMAGE ENHANCEMENTS
+   ============================================ */
+
+.left-sidebar .me {
+    border-radius: 30px !important;
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.left-sidebar .me:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 60px rgba(40, 233, 140, 0.3),
+        0 0 40px rgba(40, 233, 140, 0.2);
+}
+
+/* ============================================
+   SOCIAL ICONS ANIMATION
+   ============================================ */
+
+.social-profile li a {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+}
+
+.social-profile li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(40, 233, 140, 0.3) 0%, transparent 70%);
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.social-profile li a:hover {
+    transform: translateY(-5px);
+    color: var(--primary_color) !important;
+}
+
+.social-profile li a:hover::before {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* ============================================
+   SECTION HEADER TEXT GRADIENTS
+   ============================================ */
+
+.section-header h1 span {
+    background: var(--gradient_text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    display: inline-block;
+}
+
+/* ============================================
+   HERO SECTION ENHANCEMENTS
+   ============================================ */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(40, 233, 140, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.hero-section .facts>div {
+    position: relative;
+}
+
+.hero-section .facts>div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient_primary);
+    opacity: 0.1;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* ============================================
+   RESUME TIMELINE ENHANCEMENTS
+   ============================================ */
+
+.resume-timeline .item {
+    position: relative;
+    padding-left: 40px;
+    transition: transform 0.3s ease;
+}
+
+.resume-timeline .item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: var(--gradient_primary);
+    border-radius: 50%;
+    box-shadow: var(--shadow_glow);
+    animation: glow 2s ease-in-out infinite;
+}
+
+.resume-timeline .item:hover {
+    transform: translateX(10px);
+}
+
+/* ============================================
+   SERVICE CARDS GLASSMORPHISM
+   ============================================ */
+
+.service-item {
+    background: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(40, 233, 140, 0.1) 0%, transparent 50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--primary_color) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+        var(--shadow_glow);
+}
+
+.service-item:hover::before {
+    opacity: 1;
+}
+
+.service-item i {
+    transition: transform 0.4s ease;
+}
+
+.service-item:hover i {
+    transform: scale(1.2) rotate(10deg);
+    color: var(--primary_color) !important;
+}
+
+/* ============================================
+   SKILLS SECTION ENHANCEMENTS
+   ============================================ */
+
+.skill {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.skill:hover {
+    transform: translateY(-15px);
+}
+
+.skill-inner {
+    position: relative;
+    border-radius: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill:hover .skill-inner {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--primary_color);
+    box-shadow: var(--shadow_glow);
+}
+
+.skill-inner img {
+    filter: grayscale(50%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover .skill-inner img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.skill .percent {
+    background: var(--gradient_text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ============================================
+   PORTFOLIO ITEMS HOVER EFFECTS
+   ============================================ */
+
+.portfolio-item {
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item-inner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.portfolio-item-inner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient_primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.portfolio-item:hover .portfolio-item-inner::before {
+    opacity: 0.3;
+}
+
+.portfolio-item img {
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================
+   CONTACT FORM MODERN INPUTS
+   ============================================ */
+
+.contact-form .input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 15px !important;
+    color: #fff !important;
+    padding: 15px 20px !important;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: var(--primary_color) !important;
+    box-shadow: 0 0 0 3px rgba(40, 233, 140, 0.1),
+        var(--shadow_glow);
+    background: rgba(255, 255, 255, 0.08) !important;
+    outline: none;
+}
+
+.contact-form label {
+    color: var(--primary_color);
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* ============================================
+   RESPONSIVE MENU ENHANCEMENTS
+   ============================================ */
+
+.icon-menu {
+    background: rgba(31, 31, 31, 0.9) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease;
+}
+
+.icon-menu:hover {
+    border-color: var(--primary_color) !important;
+    box-shadow: var(--shadow_glow);
+    transform: scale(1.1);
+}
+
+/* ============================================
+   GO TO PROJECT BUTTON ANIMATION
+   ============================================ */
+
+.go-to-project-btn {
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.go-to-project-btn img {
+    animation: rotate360 20s linear infinite;
+}
+
+.go-to-project-btn:hover {
+    transform: scale(1.1);
+}
+
+.go-to-project-btn i {
+    animation: float 2s ease-in-out infinite;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient_primary);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient_secondary);
+}
+
+/* ============================================
+   ADDITIONAL UTILITY CLASSES
+   ============================================ */
+
+.text-gradient {
+    background: var(--gradient_text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.shadow-glow {
+    box-shadow: var(--shadow_glow);
+}
