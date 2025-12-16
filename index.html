@@ -3,591 +3,316 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Nishad Miah | Flutter & Mobile App Developer</title>
-    <meta name="description"
-        content="Md Nishad Miah | Flutter & Mobile App Developer | Bangladesh | Portfolio | Open Source | Freelancer">
+    <title>Nishad | Flutter Developer</title>
+    <meta name="description" content="Flutter Developer crafting beautiful cross-platform mobile applications.">
 
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- Stylesheet -->
+    <!-- Icons -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./assets/css/animate.min.css">
-    <link rel="stylesheet" href="./assets/css/smooth-scrollbar.css">
 
-    <!-- NEW: Modern Design Files -->
-    <link rel="stylesheet" href="./assets/css/animations.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/modern-enhancements.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/glass-style.css">
 </head>
 
-<body class="home1-page">
+<body>
 
-    <!-- Preloader -->
-    <div class="page-loader">
-        <div class="bounceball"></div>
+    <!-- Animated Background Blobs -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
     </div>
 
-    <span class="icon-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </span>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-card glass-strong">
+                <div class="hero-avatar">
+                    <i class="lab la-flutter"></i>
+                </div>
 
-    <!-- Side Menu Bar -->
-    <div class="responsive-sidebar-menu">
-        <div class="overlay"></div>
-        <div class="sidebar-menu-inner">
-            <div class="menu-wrap">
-                <p>Menu</p>
-                <ul class="menu scroll-nav-responsive d-flex">
-                    <li>
-                        <a class="scroll-to" href="#home">
-                            <i class="las la-home"></i> <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="scroll-to" href="#about">
-                            <i class="lar la-user"></i> <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="scroll-to" href="#resume">
-                            <i class="las la-briefcase"></i> <span>Resume</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="scroll-to" href="#services">
-                            <i class="las la-stream"></i> <span>Services</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="scroll-to" href="#skills">
-                            <i class="las la-shapes"></i> <span>Skills</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="scroll-to" href="#portfolio">
-                            <i class="las la-grip-vertical"></i> <span>Portfolios</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="scroll-to" href="#contact">
-                            <i class="las la-envelope"></i> <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
+                <h1 class="hero-title">
+                    👋 Hi, I'm <span class="gradient-text">Nishad</span>
+                </h1>
+
+                <p class="hero-subtitle">Flutter Developer</p>
+
+                <p
+                    style="font-size: 1.125rem; color: var(--text-medium); max-width: 500px; margin: 0 auto var(--space-lg);">
+                    Crafting beautiful cross-platform mobile applications with clean code and smooth animations.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="las la-code"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-glass">
+                        <i class="las la-envelope"></i> Get In Touch
+                    </a>
+                </div>
             </div>
 
-            <div class="sidebar-social">
-                <p>Social</p>
-                <ul class="social-links d-flex align-items-center">
-                    <li>
-                        <a href=""><i class="lab la-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="lab la-dribbble"></i></a>
-                    </li>
-                    <li>
-                        <a href=""><i class="lab la-instagram"></i></a>
-                    </li>
-                </ul>
+            <!-- Floating Skill Badges -->
+            <div class="floating-badges">
+                <div class="badge">Flutter</div>
+                <div class="badge">Dart</div>
+                <div class="badge">Firebase</div>
+                <div class="badge">REST APIs</div>
+                <div class="badge">Clean Architecture</div>
+                <div class="badge">iOS & Android</div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <ul class="menu scroll-nav d-flex">
-        <li>
-            <a class="scroll-to" href="#home">
-                <span>Home</span> <i class="las la-home"></i>
-            </a>
-        </li>
-        <li>
-            <a class="scroll-to" href="#about">
-                <span>About</span> <i class="lar la-user"></i>
-            </a>
-        </li>
-        <li>
-            <a class="scroll-to" href="#resume">
-                <span>Resume</span> <i class="las la-briefcase"></i>
-            </a>
-        </li>
-        <li>
-            <a class="scroll-to" href="#services">
-                <span>Services</span> <i class="las la-stream"></i>
-            </a>
-        </li>
-        <li>
-            <a class="scroll-to" href="#skills">
-                <span>Skills</span> <i class="las la-shapes"></i>
-            </a>
-        </li>
-        <li>
-            <a class="scroll-to" href="#portfolio">
-                <span>Portfolios</span> <i class="las la-grip-vertical"></i>
-            </a>
-        </li>
-        <li>
-            <a class="scroll-to" href="#contact">
-                <span>Contact</span> <i class="las la-envelope"></i>
-            </a>
-        </li>
-    </ul>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2><span class="gradient-text">About Me</span></h2>
+            </div>
 
-    <!-- Left-Details-Area-Start -->
-    <div class="left-sidebar">
-        <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <div class="glass reveal"
+                style="padding: var(--space-xl); max-width: 800px; margin: 0 auto var(--space-2xl);">
+                <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-medium); text-align: center;">
+                    Experienced Flutter Developer with <strong>1.7+ years</strong> specializing in cross-platform mobile
+                    applications.
+                    Passionate about building production-ready apps with clean architecture, Firebase integration, and
+                    performance optimization.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card glass reveal">
+                    <div class="stat-number" data-count="1700">0</div>
+                    <div class="stat-label">Days Experience</div>
+                </div>
+                <div class="stat-card glass reveal">
+                    <div class="stat-number" data-count="3">0</div>
+                    <div class="stat-label">Apps Published</div>
+                </div>
+                <div class="stat-card glass reveal">
+                    <div class="stat-number" data-count="10000">0</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+            </div>
         </div>
-        <img class="me" src="./assets/images/port1.jpg" alt="Me">
-        <h2 class="email">Md Nishad Miah </h2>
-        <h2 class="address">Flutter & Mobile App Developer</h2>
-        <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
-            <li>
-                <a href="" target="_blank"><i class="lab la-twitter"></i></a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/share/18e95frHdx/" target="_blank"><i class="la la-facebook"></i></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/ashik505855?igsh=YzljYTk1ODg3Zg==" target="_blank"><i
-                        class="lab la-instagram"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/NishadMiah" target="_blank"><i class="lab la-github"></i></a>
-            </li>
-            <li>
-                <a href="https://linkedin.com/in/nishadmiah" target="_blank"><i class="lab la-linkedin-in"></i></a>
-            </li>
-        </ul>
-        <a href="#contact" class="theme-btn scroll-to">
-            <i class="las la-envelope"></i> Hire Me!
-        </a>
-    </div>
-    <!-- Left-Details-Area-End -->
+    </section>
 
-    <!-- Main Section -->
-    <main class="drake-main">
-        <div id="smooth-wrapper">
-            <div id="smooth-content">
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2><span class="gradient-text">Tech Stack</span></h2>
+            </div>
 
-                <div class="left-sidebar">
-                    <div class="sidebar-header d-flex align-items-center justify-content-between">
+            <div class="bento-grid">
+                <div class="bento-item glass reveal">
+                    <div class="bento-icon">📱</div>
+                    <div class="bento-title">Mobile Development</div>
+                    <div class="bento-tags">
+                        <span class="tag">Flutter</span>
+                        <span class="tag">Dart</span>
+                        <span class="tag">React Native</span>
                     </div>
-                    <img class="me" src="./assets/images/port1.jpg" alt="Me">
-                    <h2 class="email">Md Nishad Miah</h2>
-                    <h2 class="address">Dhaka, Bangladesh</h2>
-                    <ul class="social-profile d-flex align-items-center flex-wrap justify-content-center">
-                        <li>
-                            <a href=""><i class="lab la-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="lab la-dribbble"></i></a>
-                        </li>
-                        <li>
-                            <a href=""><i class="lab la-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/NishadMiah"><i class="lab la-github"></i></a>
-                        </li>
-                    </ul>
-                    <div class="section-header">
-                        <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                            <i class="las la-user"></i> About Me
-                        </h4>
-                        <p class="scroll-animation" data-animation="fade_from_bottom">
-                            Highly motivated Flutter Developer with proven experience in building, deploying, and
-                            maintaining cross-platform mobile applications for Android and iOS. Strong expertise in
-                            Flutter, Dart, Firebase, and RESTful APIs, with real-world production apps available on App
-                            Store and Play Store.
+                </div>
+
+                <div class="bento-item glass reveal">
+                    <div class="bento-icon">🏗️</div>
+                    <div class="bento-title">Architecture</div>
+                    <div class="bento-tags">
+                        <span class="tag">Clean Arch</span>
+                        <span class="tag">MVVM</span>
+                        <span class="tag">MVC</span>
+                    </div>
+                </div>
+
+                <div class="bento-item glass reveal">
+                    <div class="bento-icon">🔥</div>
+                    <div class="bento-title">Backend & APIs</div>
+                    <div class="bento-tags">
+                        <span class="tag">Firebase</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Firestore</span>
+                    </div>
+                </div>
+
+                <div class="bento-item glass reveal">
+                    <div class="bento-icon">🛠️</div>
+                    <div class="bento-title">Tools & Platforms</div>
+                    <div class="bento-tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">Android</span>
+                        <span class="tag">iOS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2><span class="gradient-text">Featured Projects</span></h2>
+            </div>
+
+            <!-- Project 1: TherapyGo -->
+            <div class="project-card glass reveal">
+                <div class="project-mockup">
+                    <img src="./assets/images/therapygo_1.png" alt="TherapyGo App">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Healthcare</div>
+                    <h3>TherapyGo</h3>
+                    <p class="project-description">
+                        Healthcare appointment management app with automated reminders and role-based user management.
+                        Built with Flutter and Firebase, deployed to App Store and Play Store.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">Firebase</span>
+                        <span class="tech-badge">FCM</span>
+                        <span class="tech-badge">Firestore</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://apps.apple.com/us/app/therapygo/id6710965444" target="_blank"
+                            class="btn btn-primary">
+                            <i class="lab la-app-store"></i> App Store
+                        </a>
+                        <a href="#" class="btn btn-glass">
+                            <i class="lab la-google-play"></i> Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Elouisa+ -->
+            <div class="project-card glass reveal reverse">
+                <div class="project-mockup">
+                    <img src="./assets/images/elouisa_1.png" alt="Elouisa+ App">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Entertainment</div>
+                    <h3>Elouisa+</h3>
+                    <p class="project-description">
+                        All-in-one entertainment streaming platform with movies, TV shows, live TV, and radio.
+                        Optimized for high-load media streaming with 10K+ downloads.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">REST APIs</span>
+                        <span class="tech-badge">Streaming</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://play.google.com/store/apps/details?id=app.kanalelouisa.elouisa" target="_blank"
+                            class="btn btn-primary">
+                            <i class="lab la-google-play"></i> Play Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Thai Kitchen -->
+            <div class="project-card glass reveal">
+                <div class="project-mockup">
+                    <img src="./assets/images/thai_halal_1.png" alt="Thai Kitchen App">
+                </div>
+                <div class="project-content">
+                    <div class="project-category">Food & Restaurant</div>
+                    <h3>My Thai Halal Kitchen</h3>
+                    <p class="project-description">
+                        Restaurant management system with real-time cart, order tracking, and dynamic menu integration.
+                        Reduced order processing time by 40%.
+                    </p>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Flutter</span>
+                        <span class="tech-badge">REST APIs</span>
+                        <span class="tech-badge">MVC</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://apps.apple.com/us/app/my-thai-halal/id6743726721" target="_blank"
+                            class="btn btn-primary">
+                            <i class="lab la-app-store"></i> App Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2><span class="gradient-text">Experience</span></h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-card glass">
+                        <h3 class="timeline-title">Flutter Developer</h3>
+                        <div class="timeline-meta">Betopia Group • 7 Months</div>
+                        <p class="timeline-description">
+                            Developed appointment management systems and restaurant apps with custom REST APIs.
+                            Implemented category browsing, cart systems, and automated reminders.
                         </p>
                     </div>
+                </div>
 
-                    <div class="section-header">
-                        <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                            <i class="las la-briefcase"></i> Experience & Education
-                        </h4>
-                        <h1 class="scroll-animation" data-animation="fade_from_bottom">My
-                            <span>Resume</span>
-                        </h1>
+                <div class="timeline-item reveal">
+                    <div class="timeline-card glass">
+                        <h3 class="timeline-title">Flutter Developer</h3>
+                        <div class="timeline-meta">Cellsweb IT Solutions Ltd • 1 Year</div>
+                        <p class="timeline-description">
+                            Designed scalable cross-platform apps. Integrated Firebase Auth, Firestore, and Push
+                            Notifications.
+                            Collaborated with UI/UX teams for production-ready delivery.
+                        </p>
                     </div>
-
-                    <div class="resume-timeline">
-                        <div class="item scroll-animation" data-animation="fade_from_right">
-                            <span class="date">1 Year</span>
-                            <h2>Flutter Developer</h2>
-                            <p>Cellsweb IT Solutions Ltd, Dhaka</p>
-                            <p class="role-details">Designed and developed scalable cross-platform mobile apps using
-                                Flutter/Dart. Integrated Firebase & RESTful APIs.</p>
-                        </div>
-                        <div class="item scroll-animation" data-animation="fade_from_right">
-                            <span class="date">7 Months</span>
-                            <h2>Flutter Developer</h2>
-                            <p>Betopia Group, Dhaka</p>
-                            <p class="role-details">Built appointment/restaurant management systems. Focus on
-                                performance, UI, and custom REST API backend.</p>
-                        </div>
-                        <div class="item scroll-animation" data-animation="fade_from_right">
-                            <span class="date">2020 - 2021</span>
-                            <h2>Diploma in Computer Technology</h2>
-                            <p>Rangpur Polytechnic Institute (Result: 3.60)</p>
-                        </div>
-                        <div class="item scroll-animation" data-animation="fade_from_right">
-                            <span class="date">2019-2020</span>
-                            <h2>Secondary School Certificate (Science)</h2>
-                            <p>Buzruk Shontoshpur Adorsh High School (GPA 4.73)</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-            </section>
-
-            <!-- Services Section -->
-            <section class="services-area page-section scroll-to-page" id="services">
-                <div class="custom-container">
-                    <div class="services-content content-width">
-                        <div class="section-header">
-                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                <i class="las la-stream"></i> Services
-                            </h4>
-                            <h1 class="scroll-animation" data-animation="fade_from_bottom">My
-                                <span>Specializations</span>
-                            </h1>
-                        </div>
-
-                        <div class="services-items">
-                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                <i class="las la-mobile"></i>
-                                <h2>Mobile Development</h2>
-                                <p>Expert in building cross-platform applications for Android and iOS using Flutter and
-                                    React Native. Clean architecture and performance optimization.</p>
-                            </div>
-                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                <i class="las la-server"></i>
-                                <h2>Backend & APIs</h2>
-                                <p>Integration of Firebase (Auth, Firestore, Cloud Messaging) and RESTful APIs to create
-                                    dynamic, interconnected applications.</p>
-                            </div>
-                            <div class="service-item scroll-animation" data-animation="fade_from_bottom">
-                                <i class="las la-project-diagram"></i>
-                                <h2>App Architecture</h2>
-                                <p>Implementation of MVC/MVVM patterns, State Management, and Git version control for
-                                    scalable and maintainable codebases.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills Section -->
-            <section class="skills-area page-section scroll-to-page" id="skills">
-                <div class="custom-container">
-                    <div class="skills-content content-width">
-                        <div class="section-header">
-                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                <i class="las la-shapes"></i> my skills
-                            </h4>
-                            <h1 class="scroll-animation" data-animation="fade_from_bottom">My
-                                <span>Advantages</span>
-                            </h1>
-                        </div>
-
-                        <div class="row skills text-center">
-                            <div class="col-md-3 scroll-animation" data-animation="fade_from_left">
-                                <div class="skill">
-                                    <div class="skill-inner">
-                                        <img src="./assets/images/python.png" alt="Python">
-                                        <h1 class="percent">75%</h1>
-                                    </div>
-                                    <p class="name">Python</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 scroll-animation" data-animation="fade_from_bottom">
-                                <div class="skill">
-                                    <div class="skill-inner">
-                                        <img src="./assets/images/react-native.png" alt="React Native">
-                                        <h1 class="percent">80%</h1>
-                                    </div>
-                                    <p class="name">React Native
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 scroll-animation" data-animation="fade_from_top">
-                                <div class="skill">
-                                    <div class="skill-inner">
-                                        <img src="./assets/images/project-man.png" alt="Project Management">
-                                        <h1 class="percent">95%</h1>
-                                    </div>
-                                    <p class="name">Project
-                                        Management
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 scroll-animation" data-animation="fade_from_right">
-                                <div class="skill">
-                                    <div class="skill-inner">
-                                        <img src="./assets/images/flutter.png" alt="Flutter">
-                                        <h1 class="percent">90%</h1>
-                                    </div>
-                                    <p class="name">Flutter</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Portfolio Section -->
-            <section class="portfolio-area page-section scroll-to-page" id="portfolio">
-                <div class="custom-container">
-                    <div class="portfolio-content content-width">
-                        <div class="section-header">
-                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                <i class="las la-grip-vertical"></i> portfolio
-                            </h4>
-                            <h1 class="scroll-animation" data-animation="fade_from_bottom">Featured
-                                <span>Projects</span>
-                            </h1>
-                        </div>
-
-                        <div class="row portfolio-items">
-                            <!-- Project 1: TherapyGo -->
-                            <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                                <div class="portfolio-item portfolio-full">
-                                    <div class="portfolio-item-inner">
-                                        <a href="./assets/images/therapygo_1.png" data-lightbox="therapygo-gallery">
-                                            <img src="./assets/images/therapygo_1.png" alt="TherapyGo App">
-                                        </a>
-                                        <!-- Hidden gallery images -->
-                                        <div style="display:none">
-                                            <a href="./assets/images/therapygo_2.png"
-                                                data-lightbox="therapygo-gallery"></a>
-                                            <a href="./assets/images/therapygo_3.png"
-                                                data-lightbox="therapygo-gallery"></a>
-                                            <a href="./assets/images/therapygo_4.png"
-                                                data-lightbox="therapygo-gallery"></a>
-                                            <a href="./assets/images/therapygo_5.png"
-                                                data-lightbox="therapygo-gallery"></a>
-                                        </div>
-
-                                        <ul class="portfolio-categories">
-                                            <li><a href="">Flutter</a></li>
-                                            <li><a href="">Firebase</a></li>
-                                            <li><a href="">Appointment</a></li>
-                                        </ul>
-                                    </div>
-                                    <h2><a href="https://apps.apple.com/us/app/therapygo/id6710965444"
-                                            target="_blank">TherapyGo - Appointment Management</a></h2>
-                                    <p>Production-ready cross-platform app (App Store & Play Store) featuring
-                                        appointment scheduling, reminders, and role-based user management.</p>
-                                </div>
-                            </div>
-
-                            <!-- Project 2: Elouisa+ -->
-                            <div class="col-md-6 scroll-animation" data-animation="fade_from_left">
-                                <div class="portfolio-item portfolio-half">
-                                    <div class="portfolio-item-inner">
-                                        <a href="./assets/images/elouisa_1.png" data-lightbox="elouisa">
-                                            <img src="./assets/images/elouisa_1.png" alt="Elouisa+">
-                                        </a>
-                                        <!-- Hidden gallery images -->
-                                        <div style="display:none">
-                                            <a href="./assets/images/elouisa_2.png" data-lightbox="elouisa"></a>
-                                            <a href="./assets/images/elouisa_3.png" data-lightbox="elouisa"></a>
-                                            <a href="./assets/images/elouisa_4.png" data-lightbox="elouisa"></a>
-                                            <a href="./assets/images/elouisa_5.png" data-lightbox="elouisa"></a>
-                                        </div>
-
-                                        <ul class="portfolio-categories">
-                                            <li><a href="">Flutter</a></li>
-                                            <li><a href="">Streaming</a></li>
-                                            <li><a href="">Entertainment</a></li>
-                                        </ul>
-                                    </div>
-                                    <h2><a href="https://play.google.com/store/apps/details?id=app.kanalelouisa.elouisa"
-                                            target="_blank">Elouisa+ Streaming App</a></h2>
-                                    <p>All-in-one platform for movies, TV, music, and live TV.</p>
-                                </div>
-                            </div>
-
-                            <!-- Project 3: My Thai Halal Kitchen -->
-                            <div class="col-md-6 scroll-animation" data-animation="fade_from_right">
-                                <div class="portfolio-item portfolio-half">
-                                    <div class="portfolio-item-inner">
-                                        <a href="./assets/images/thai_halal_1.png" data-lightbox="thai-kitchen">
-                                            <img src="./assets/images/thai_halal_1.png" alt="My Thai Halal Kitchen">
-                                        </a>
-                                        <!-- Hidden gallery images -->
-                                        <div style="display:none">
-                                            <a href="./assets/images/thai_halal_2.png" data-lightbox="thai-kitchen"></a>
-                                            <a href="./assets/images/thai_halal_3.png" data-lightbox="thai-kitchen"></a>
-                                            <a href="./assets/images/thai_halal_4.png" data-lightbox="thai-kitchen"></a>
-                                        </div>
-
-                                        <ul class="portfolio-categories">
-                                            <li><a href="">Flutter</a></li>
-                                            <li><a href="">REST API</a></li>
-                                            <li><a href="">Restaurant</a></li>
-                                        </ul>
-                                    </div>
-                                    <h2><a href="https://apps.apple.com/us/app/my-thai-halal/id6743726721"
-                                            target="_blank">My Thai Halal Kitchen</a></h2>
-                                    <p>Restaurant management with menu, cart, and order tracking.</p>
-                                </div>
-                            </div>
-
-                            <!-- Project 4: Malooz -->
-                            <div class="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                                <div class="portfolio-item portfolio-full">
-                                    <div class="portfolio-item-inner">
-                                        <a href="./assets/images/malooz_1.jpg" data-lightbox="malooz">
-                                            <img src="./assets/images/malooz_1.jpg" alt="Malooz Television">
-                                        </a>
-                                        <!-- Hidden gallery images -->
-                                        <div style="display:none">
-                                            <a href="./assets/images/malooz_2.jpg" data-lightbox="malooz"></a>
-                                            <a href="./assets/images/malooz_3.jpg" data-lightbox="malooz"></a>
-                                            <a href="./assets/images/malooz_4.jpg" data-lightbox="malooz"></a>
-                                        </div>
-
-                                        <ul class="portfolio-categories">
-                                            <li><a href="">Flutter</a></li>
-                                            <li><a href="">Live TV</a></li>
-                                            <li><a href="">Streaming</a></li>
-                                        </ul>
-                                    </div>
-                                    <h2><a href="#" target="_blank">Malooz Television</a></h2>
-                                    <p>Ultimate streaming: 24/7 live TV, movies, series & events anytime, anywhere.
-                                        Features a vast content library, seamless streaming, and an intuitive interface.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section class="contact-area page-section scroll-content" id="contact">
-                <div class="custom-container">
-                    <div class="contact-content content-width">
-                        <div class="section-header">
-                            <h4 class="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                <i class="las la-dollar-sign"></i> contact
-                            </h4>
-                            <h1 class="scroll-animation" data-animation="fade_from_bottom">Let's Work
-                                <span>Together!</span>
-                            </h1>
-                        </div>
-                        <h3 class="scroll-animation" data-animation="fade_from_bottom">moonjur8@gmail.com</h3>
-                        <p id="required-msg">* Marked fields are required to fill.</p>
-
-                        <form class="contact-form scroll-animation" data-animation="fade_from_bottom" method="POST"
-                            action="mailer.php">
-                            <div class="alert alert-success messenger-box-contact__msg" style="display: none"
-                                role="alert">
-                                Your message was sent successfully.
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <label for="full-name">full Name <sup>*</sup></label>
-                                        <input type="text" name="full-name" id="full-name" placeholder="Your Full Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <label for="email">Email <sup>*</sup></label>
-                                        <input type="email" name="email" id="email" placeholder="Your email adress">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <label for="phone-number">phone <span>(optional)</span></label>
-                                        <input type="text" name="phone-number" id="phone-number"
-                                            placeholder="+8801315271377">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="input-group">
-                                        <label for="subject">subject <sup>*</sup></label>
-                                        <select name="subject" id="subject">
-                                            <option value="">Select a subject</option>
-                                            <option value="subject1">Website to Android App</option>
-                                            <option value="subject2">App Design</option>
-                                            <option value="subject3">App Development</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <label for="budget">your budget <span>(optional)</span></label>
-                                        <input type="number" name="budget" id="budget"
-                                            placeholder="A range budget for your project">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <label for="message">message</label>
-                                        <textarea name="message" id="message"
-                                            placeholder="Wrire your message here ..."></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="input-group upload-attachment">
-                                        <div>
-                                            <label for="upload-attachment">
-                                                <i class="las la-cloud-upload-alt"></i> add an attachment
-                                                <input type="file" name="file" id="upload-attachment">
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="input-group submit-btn-wrap">
-                                        <button class="theme-btn" name="submit" type="submit" id="submit-form">send
-                                            message</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-
-                    </div>
-                </div>
-            </section>
         </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-card glass-strong reveal">
+                <h2 style="margin-bottom: var(--space-lg);">
+                    <span class="gradient-text">Let's Build Something Great</span>
+                </h2>
+
+                <div class="contact-links">
+                    <a href="mailto:moonjur8@gmail.com" class="contact-link">
+                        <i class="las la-envelope"></i>
+                        moonjur8@gmail.com
+                    </a>
+                    <a href="tel:+8801315271377" class="contact-link">
+                        <i class="las la-phone"></i>
+                        +880 1315 271 377
+                    </a>
+                </div>
+
+                <div class="social-buttons">
+                    <a href="https://linkedin.com/in/nishadmiahadMiah" target="_blank" class="social-btn">
+                        <i class="lab la-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/NishadMiah" target="_blank" class="social-btn">
+                        <i class="lab la-github"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Footer -->
+    <footer style="padding: var(--space-xl) 0; text-align: center;">
+        <p style="color: var(--text-medium);">© 2025 Md Nishad Miah • Built with Flutter mindset ✨</p>
+    </footer>
 
     <!-- Scripts -->
-    <script src="./assets/js/jquery.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/owl.carousel.js"></script>
-    <script src="./assets/js/gsap.min.js"></script>
-    <script src="./assets/js/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/ScrollToPlugin.min.js"></script>
-
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/ajax-form.js"></script>
-
-    <!-- NEW: Modern Interactions -->
-    <script src="./assets/js/custom-interactions.js"></script>
-
+    <script src="./assets/js/glass-animations.js"></script>
 </body>
 
 </html>
