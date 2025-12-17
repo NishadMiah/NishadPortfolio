@@ -1,0 +1,138 @@
+/* Carousel Container */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0;
+    /* Mask for smooth fade edges */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carousel-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+    padding-left: 40px;
+    /* Initial offset */
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-50% - 20px));
+        /* Slide half distance (assuming duplicates) */
+    }
+}
+
+/* Fire Card Modification */
+.project-card-fire {
+    width: 350px;
+    /* Fixed width for carousel */
+    flex-shrink: 0;
+    position: relative;
+    background: rgba(20, 20, 30, 0.6);
+    /* Darker base for fire contrast */
+    border-radius: 20px;
+    z-index: 1;
+    overflow: visible;
+    /* Allow glow to spill out */
+    transition: transform 0.3s ease;
+}
+
+.project-card-fire:hover {
+    transform: scale(1.05) translateY(-5px);
+    z-index: 10;
+}
+
+/* The Fire Border Animation */
+.project-card-fire::before,
+.project-card-fire::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    /* Border thickness */
+    border-radius: 22px;
+    background: conic-gradient(from 0deg,
+            transparent 0%,
+            #ff4500 10%,
+            #ff8c00 20%,
+            #ffd700 30%,
+            transparent 50%,
+            transparent 100%);
+    z-index: -1;
+    animation: rotate 4s linear infinite;
+}
+
+.project-card-fire::after {
+    filter: blur(15px);
+    /* The glow effect */
+    opacity: 0.7;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Adjusting card internal layout for carousel */
+.project-card-fire .project-mockup {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-top: -30px;
+    /* Pull phone up */
+}
+
+.project-card-fire .project-mockup img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.project-card-fire .project-content {
+    padding: 20px;
+    color: white;
+}
+
+.project-card-fire h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    background: linear-gradient(to right, #ffd700, #ff4500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-card-fire .project-description {
+    font-size: 0.9rem;
+    color: #ddd;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Badge Tweaks for Dark Theme */
+.project-card-fire .tech-badge {
+    background: rgba(255, 69, 0, 0.2);
+    border: 1px solid rgba(255, 69, 0, 0.4);
+    color: #ffd700;
+}

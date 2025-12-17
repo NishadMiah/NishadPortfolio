@@ -13,6 +13,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/glass-style.css">
+    <link rel="stylesheet" href="./assets/css/carousel-fire.css">
 </head>
 
 <body>
@@ -158,104 +159,102 @@
                 <h2><span class="gradient-text">Featured Projects</span></h2>
             </div>
 
-            <!-- Project: Malooz -->
-            <div class="project-card glass reveal">
-                <div class="project-mockup">
-                    <img src="./assets/images/malooz_1.jpg" alt="Malooz App">
-                </div>
-                <div class="project-content">
-                    <div class="project-category">Entertainment / Streaming</div>
-                    <h3>Malooz</h3>
-                    <p class="project-description">
-                        Ultimate streaming experience with 24/7 live TV, movies, series & events.
-                        Features vast content library, live broadcasts, and personalized recommendations.
-                    </p>
-                    <div class="tech-badges">
-                        <span class="tech-badge">Flutter</span>
-                        <span class="tech-badge">Live Streaming</span>
-                        <span class="tech-badge">REST APIs</span>
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="projectTrack">
+                    <!-- Project: Malooz -->
+                    <div class="project-card-fire glass">
+                        <div class="project-mockup">
+                            <img src="./assets/images/malooz_1.jpg" alt="Malooz App">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Entertainment</div>
+                            <h3>Malooz</h3>
+                            <p class="project-description">
+                                Ultimate streaming experience with 24/7 live TV, movies, series & events.
+                            </p>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Live Streaming</span>
+                            </div>
+                            <div style="margin-top: 15px;">
+                                <a href="#" class="btn btn-sm"
+                                    style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; text-decoration: none; color: white; font-size: 0.8rem;">View
+                                    Project</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Project 1: TherapyGo -->
-            <div class="project-card glass reveal reverse">
-                <div class="project-mockup">
-                    <img src="./assets/images/therapygo_1.png" alt="TherapyGo App">
-                </div>
-                <div class="project-content">
-                    <div class="project-category">Healthcare</div>
-                    <h3>TherapyGo</h3>
-                    <p class="project-description">
-                        Healthcare appointment management app with automated reminders and role-based user management.
-                        Built with Flutter and Firebase, deployed to App Store and Play Store.
-                    </p>
-                    <div class="tech-badges">
-                        <span class="tech-badge">Flutter</span>
-                        <span class="tech-badge">Firebase</span>
-                        <span class="tech-badge">FCM</span>
-                        <span class="tech-badge">Firestore</span>
+                    <!-- Project: TherapyGo -->
+                    <div class="project-card-fire glass">
+                        <div class="project-mockup">
+                            <img src="./assets/images/therapygo_1.png" alt="TherapyGo App">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Healthcare</div>
+                            <h3>TherapyGo</h3>
+                            <p class="project-description">
+                                Healthcare appointment management app with automated reminders.
+                            </p>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Firebase</span>
+                            </div>
+                            <div style="margin-top: 15px;">
+                                <a href="https://apps.apple.com/us/app/therapygo/id6710965444" target="_blank"
+                                    class="btn btn-sm"
+                                    style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; text-decoration: none; color: white; font-size: 0.8rem;">App
+                                    Store</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://apps.apple.com/us/app/therapygo/id6710965444" target="_blank"
-                            class="btn btn-primary">
-                            <i class="lab la-app-store"></i> App Store
-                        </a>
-                        <a href="#" class="btn btn-glass">
-                            <i class="lab la-google-play"></i> Play Store
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 2: Elouisa+ -->
-            <div class="project-card glass reveal">
-                <div class="project-mockup">
-                    <img src="./assets/images/elouisa_1.png" alt="Elouisa+ App">
-                </div>
-                <div class="project-content">
-                    <div class="project-category">Entertainment</div>
-                    <h3>Elouisa+</h3>
-                    <p class="project-description">
-                        All-in-one entertainment streaming platform with movies, TV shows, live TV, and radio.
-                        Optimized for high-load media streaming with 10K+ downloads.
-                    </p>
-                    <div class="tech-badges">
-                        <span class="tech-badge">Flutter</span>
-                        <span class="tech-badge">REST APIs</span>
-                        <span class="tech-badge">Streaming</span>
+                    <!-- Project: Elouisa+ -->
+                    <div class="project-card-fire glass">
+                        <div class="project-mockup">
+                            <img src="./assets/images/elouisa_1.png" alt="Elouisa+ App">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Entertainment</div>
+                            <h3>Elouisa+</h3>
+                            <p class="project-description">
+                                All-in-one streaming platform with movies, TV shows, and live TV.
+                            </p>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Streaming</span>
+                            </div>
+                            <div style="margin-top: 15px;">
+                                <a href="https://play.google.com/store/apps/details?id=app.kanalelouisa.elouisa"
+                                    target="_blank" class="btn btn-sm"
+                                    style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; text-decoration: none; color: white; font-size: 0.8rem;">Play
+                                    Store</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=app.kanalelouisa.elouisa" target="_blank"
-                            class="btn btn-primary">
-                            <i class="lab la-google-play"></i> Play Store
-                        </a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 3: Thai Kitchen -->
-            <div class="project-card glass reveal reverse">
-                <div class="project-mockup">
-                    <img src="./assets/images/thai_halal_1.png" alt="Thai Kitchen App">
-                </div>
-                <div class="project-content">
-                    <div class="project-category">Food & Restaurant</div>
-                    <h3>My Thai Halal Kitchen</h3>
-                    <p class="project-description">
-                        Restaurant management system with real-time cart, order tracking, and dynamic menu integration.
-                        Reduced order processing time by 40%.
-                    </p>
-                    <div class="tech-badges">
-                        <span class="tech-badge">Flutter</span>
-                        <span class="tech-badge">REST APIs</span>
-                        <span class="tech-badge">MVC</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://apps.apple.com/us/app/my-thai-halal/id6743726721" target="_blank"
-                            class="btn btn-primary">
-                            <i class="lab la-app-store"></i> App Store
-                        </a>
+                    <!-- Project: Thai Kitchen -->
+                    <div class="project-card-fire glass">
+                        <div class="project-mockup">
+                            <img src="./assets/images/thai_halal_1.png" alt="Thai Kitchen App">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-category">Food & Restaurant</div>
+                            <h3>My Thai Halal</h3>
+                            <p class="project-description">
+                                Restaurant management system with real-time cart and order tracking.
+                            </p>
+                            <div class="tech-badges">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">REST APIs</span>
+                            </div>
+                            <div style="margin-top: 15px;">
+                                <a href="https://apps.apple.com/us/app/my-thai-halal/id6743726721" target="_blank"
+                                    class="btn btn-sm"
+                                    style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; text-decoration: none; color: white; font-size: 0.8rem;">App
+                                    Store</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

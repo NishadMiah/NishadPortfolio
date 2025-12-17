@@ -103,3 +103,29 @@ if (heroCard) {
         heroCard.style.transform = `perspective(1000px) rotateY(${x}deg) rotateX(${y}deg)`;
     });
 }
+
+// Carousel Infinite Loop Logic
+function initCarousel() {
+    const track = document.getElementById('projectTrack');
+    if (!track) return;
+
+    // Clone items to ensure seamless loop
+    const items = track.children;
+    const itemWidth = 350 + 40; // Card width + gap
+    const trackWidth = items.length * itemWidth;
+
+    // Check if we need cloning (if content is smaller than screen width * 2)
+    if (trackWidth < window.innerWidth * 2) {
+        const clones = Array.from(items).map(item => item.cloneNode(true));
+        clones.forEach(clone => track.appendChild(clone));
+
+        // Clone again if still too small
+        if (trackWidth * 2 < window.innerWidth * 2) {
+            const clones2 = Array.from(items).map(item => item.cloneNode(true));
+            clones2.forEach(clone => track.appendChild(clone));
+        }
+    }
+}
+
+// Initialize Carousel on Load
+window.addEventListener('load', initCarousel);
