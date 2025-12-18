@@ -1,0 +1,350 @@
+/* ==========================================
+   PREMIUM HERO SECTION
+   ========================================== */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Left Content */
+.hero-content {
+    z-index: 1;
+}
+
+.hero-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.05));
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    animation: slideInLeft 0.8s ease;
+}
+
+.label-dot {
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2);
+    }
+}
+
+.hero-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    animation: slideInLeft 0.8s ease 0.2s both;
+}
+
+.hero-description {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    animation: slideInLeft 0.8s ease 0.4s both;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Stats Row */
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2.5rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    animation: slideInLeft 0.8s ease 0.6s both;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    animation: slideInLeft 0.8s ease 0.8s both;
+}
+
+/* Tech Stack */
+.tech-stack {
+    margin-top: 3rem;
+    animation: slideInLeft 0.8s ease 1s both;
+}
+
+.tech-label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tech-icon i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.tech-icon span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.tech-icon:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+/* Right Visual */
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInRight 1s ease 0.3s both;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.profile-card {
+    position: relative;
+    padding: 2rem;
+    max-width: 450px;
+}
+
+.profile-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    overflow: hidden;
+    animation: floatUpDown 6s ease-in-out infinite;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-ring {
+    position: absolute;
+    inset: -10px;
+    border: 3px solid var(--primary);
+    border-radius: 30px;
+    opacity: 0.3;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Floating Elements */
+.floating-element {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+}
+
+.floating-element i {
+    font-size: 1.8rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.fe-1 {
+    top: 10%;
+    right: -10px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.fe-2 {
+    bottom: 20%;
+    left: -20px;
+    animation: float 6s ease-in-out infinite 2s;
+}
+
+.fe-3 {
+    top: 50%;
+    right: -30px;
+    animation: float 6s ease-in-out infinite 4s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero-stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .tech-icons {
+        justify-content: center;
+    }
+
+    .profile-card {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

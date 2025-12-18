@@ -33,59 +33,40 @@
     }
 }
 
-/* Fire Card Modification */
+/* Enhanced Glass Card for Carousel */
 .project-card-fire {
     width: 350px;
-    /* Fixed width for carousel */
     flex-shrink: 0;
     position: relative;
-    background: rgba(20, 20, 30, 0.6);
-    /* Darker base for fire contrast */
-    border-radius: 20px;
-    z-index: 1;
-    overflow: visible;
-    /* Allow glow to spill out */
-    transition: transform 0.3s ease;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.project-card-fire::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+    opacity: 0.8;
 }
 
 .project-card-fire:hover {
-    transform: scale(1.05) translateY(-5px);
-    z-index: 10;
-}
-
-/* The Fire Border Animation */
-.project-card-fire::before,
-.project-card-fire::after {
-    content: '';
-    position: absolute;
-    inset: -3px;
-    /* Border thickness */
-    border-radius: 22px;
-    background: conic-gradient(from 0deg,
-            transparent 0%,
-            #ff4500 10%,
-            #ff8c00 20%,
-            #ffd700 30%,
-            transparent 50%,
-            transparent 100%);
-    z-index: -1;
-    animation: rotate 4s linear infinite;
-}
-
-.project-card-fire::after {
-    filter: blur(15px);
-    /* The glow effect */
-    opacity: 0.7;
-}
-
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    transform: translateY(-8px) scale(1.02);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.15) 100%);
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15),
+        0 4px 16px rgba(102, 126, 234, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 /* Adjusting card internal layout for carousel */
@@ -103,36 +84,114 @@
     height: 100%;
     width: auto;
     object-fit: contain;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
 }
 
 .project-card-fire .project-content {
-    padding: 20px;
-    color: white;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.project-card-fire .project-category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #667eea;
+    font-weight: 700;
+    margin-bottom: 8px;
 }
 
 .project-card-fire h3 {
-    margin: 10px 0;
-    font-size: 1.5rem;
-    background: linear-gradient(to right, #ffd700, #ff4500);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin: 0 0 12px 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a202c;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    line-height: 1.2;
 }
 
 .project-card-fire .project-description {
-    font-size: 0.9rem;
-    color: #ddd;
+    font-size: 0.95rem;
+    color: #2d3748;
+    line-height: 1.6;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 
-/* Badge Tweaks for Dark Theme */
+/* Badge Styling - Enhanced */
 .project-card-fire .tech-badge {
-    background: rgba(255, 69, 0, 0.2);
-    border: 1px solid rgba(255, 69, 0, 0.4);
-    color: #ffd700;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.15));
+    border: 1.5px solid rgba(102, 126, 234, 0.3);
+    color: #1a202c;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 4px 4px 4px 0;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card-fire .tech-badge:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.25));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.2);
+}
+
+/* Button Styles for Carousel Cards */
+.project-card-fire .btn,
+.project-card-fire .btn-sm {
+    display: inline-block;
+    padding: 10px 24px;
+    background: rgba(102, 126, 234, 0.9);
+    color: white;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border: 2px solid rgba(102, 126, 234, 1);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    margin-top: 12px;
+}
+
+.project-card-fire .btn:hover,
+.project-card-fire .btn-sm:hover {
+    background: rgba(118, 75, 162, 0.95);
+    border-color: rgba(118, 75, 162, 1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.project-card-fire .project-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.project-card-fire .project-links a {
+    padding: 10px 20px;
+    background: rgba(102, 126, 234, 0.9);
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-decoration: none;
+    border: 2px solid rgba(102, 126, 234, 1);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.project-card-fire .project-links a:hover {
+    background: rgba(118, 75, 162, 0.95);
+    border-color: rgba(118, 75, 162, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
 }

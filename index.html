@@ -13,6 +13,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/glass-style.css">
+    <link rel="stylesheet" href="./assets/css/navigation.css">
+    <link rel="stylesheet" href="./assets/css/hero-premium.css">
+    <link rel="stylesheet" href="./assets/css/skills-premium.css">
     <link rel="stylesheet" href="./assets/css/carousel-fire.css">
 </head>
 
@@ -25,44 +28,129 @@
         <div class="blob blob-3"></div>
     </div>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+    <!-- NAVIGATION HEADER -->
+    <header class="nav-header" id="mainNav">
         <div class="container">
-            <div class="hero-card glass-strong">
-                <div class="hero-avatar">
-                    <img src="./assets/images/port1.jpg" alt="Nishad"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+            <nav class="nav-container">
+                <a href="#" class="nav-logo">
+                    <span class="logo-text">Nishad</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="#" class="btn btn-primary btn-sm" download>
+                        <i class="las la-download"></i> Resume
+                    </a>
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION - PREMIUM REDESIGN -->
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left: Content -->
+                <div class="hero-content reveal">
+                    <div class="hero-label">
+                        <span class="label-dot"></span>
+                        Available for work
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Nishad</span><br>
+                        Flutter Developer
+                    </h1>
+
+                    <p class="hero-description">
+                        I craft beautiful, high-performance cross-platform mobile applications.
+                        Specializing in Flutter, I transform ideas into pixel-perfect experiences
+                        with clean code and smooth animations.
+                    </p>
+
+                    <!-- Stats Row -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="7">0</div>
+                            <div class="stat-label">Months Exp.</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="4">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">K+ Downloads</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="las la-rocket"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-glass">
+                            <i class="las la-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+
+                    <!-- Tech Stack -->
+                    <div class="tech-stack">
+                        <p class="tech-label">Tech Stack:</p>
+                        <div class="tech-icons">
+                            <div class="tech-icon" title="Flutter">
+                                <i class="lab la-app-store-ios"></i>
+                                <span>Flutter</span>
+                            </div>
+                            <div class="tech-icon" title="Dart">
+                                <i class="las la-code"></i>
+                                <span>Dart</span>
+                            </div>
+                            <div class="tech-icon" title="Firebase">
+                                <i class="las la-fire"></i>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tech-icon" title="REST APIs">
+                                <i class="las la-server"></i>
+                                <span>APIs</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <h1 class="hero-title">
-                    👋 Hi, I'm <span class="gradient-text">Nishad</span>
-                </h1>
+                <!-- Right: Visual -->
+                <div class="hero-visual reveal">
+                    <div class="profile-card glass">
+                        <div class="profile-image">
+                            <img src="./assets/images/port1.jpg" alt="Nishad - Flutter Developer">
+                            <div class="profile-ring"></div>
+                        </div>
 
-                <p class="hero-subtitle">Flutter Developer</p>
-
-                <p
-                    style="font-size: 1.125rem; color: var(--text-medium); max-width: 500px; margin: 0 auto var(--space-lg);">
-                    Crafting beautiful cross-platform mobile applications with clean code and smooth animations.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="las la-code"></i> View My Work
-                    </a>
-                    <a href="#contact" class="btn btn-glass">
-                        <i class="las la-envelope"></i> Get In Touch
-                    </a>
+                        <!-- Floating Elements -->
+                        <div class="floating-element fe-1">
+                            <i class="lab la-flutter"></i>
+                        </div>
+                        <div class="floating-element fe-2">
+                            <i class="las la-mobile"></i>
+                        </div>
+                        <div class="floating-element fe-3">
+                            <i class="las la-code"></i>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Floating Skill Badges -->
-            <div class="floating-badges">
-                <div class="badge">Flutter</div>
-                <div class="badge">Dart</div>
-                <div class="badge">Firebase</div>
-                <div class="badge">REST APIs</div>
-                <div class="badge">Clean Architecture</div>
-                <div class="badge">iOS & Android</div>
             </div>
         </div>
     </section>

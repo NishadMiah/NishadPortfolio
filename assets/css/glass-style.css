@@ -1,24 +1,37 @@
 /*
-    iOS GLASSMORPHIC PORTFOLIO
-    Soft, Playful, Heavily Animated
+    PROFESSIONAL PORTFOLIO DESIGN SYSTEM
+    Modern glassmorphism with purple/blue theme
 */
 
 :root {
-    /* Softer Gradients - Better Contrast */
-    --bg-gradient: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
-    --accent-gradient: linear-gradient(135deg, #667eea, #764ba2);
+    /* Colors - Primary Palette */
+    --primary: #667eea;
+    --primary-dark: #5568d3;
+    --primary-light: #8599f3;
+    --secondary: #764ba2;
+    --accent: #f093fb;
 
-    /* Glass Effect - More Opaque for Better Readability */
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-accent: linear-gradient(135deg, #f093fb 0%, #764ba2 100%);
+    --bg-gradient: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+
+    /* Glass Effect */
     --glass-bg: rgba(255, 255, 255, 0.35);
     --glass-border: rgba(255, 255, 255, 0.5);
     --glass-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
 
-    /* Text - High Contrast */
+    /* Text Colors */
     --text-dark: #1a202c;
     --text-medium: #2d3748;
     --text-light: rgba(255, 255, 255, 0.95);
+    --text-muted: #718096;
 
-    /* Spacing */
+    /* Backgrounds */
+    --bg-white: #ffffff;
+    --bg-light: #f7fafc;
+
+    /* Spacing Scale */
     --space-xs: 8px;
     --space-sm: 16px;
     --space-md: 24px;
@@ -442,11 +455,20 @@ section {
 }
 
 .tag {
-    padding: 4px 12px;
-    background: rgba(255, 255, 255, 0.3);
+    padding: 6px 14px;
+    background: rgba(102, 126, 234, 0.15);
+    border: 1.5px solid rgba(102, 126, 234, 0.3);
     border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(102, 126, 234, 0.25);
+    border-color: rgba(102, 126, 234, 0.5);
+    transform: translateY(-2px);
 }
 
 /* Project Card */
@@ -523,14 +545,21 @@ section {
 }
 
 .tech-badge {
-    padding: 6px 14px;
-    background: var(--glass-bg);
+    padding: 8px 16px;
+    background: rgba(102, 126, 234, 0.12);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
+    border: 1.5px solid rgba(102, 126, 234, 0.35);
     border-radius: 20px;
     font-size: 0.875rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--text-dark);
+    transition: all 0.3s ease;
+}
+
+.tech-badge:hover {
+    background: rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.5);
 }
 
 .project-links {
@@ -597,9 +626,9 @@ section {
 }
 
 .timeline-meta {
-    color: #667eea;
-    font-size: 0.875rem;
-    font-weight: 600;
+    color: #5568d3;
+    font-size: 0.9rem;
+    font-weight: 700;
     margin-bottom: var(--space-sm);
 }
 
@@ -629,6 +658,7 @@ section {
     justify-content: center;
     gap: var(--space-sm);
     font-size: 1.125rem;
+    font-weight: 600;
     color: var(--text-dark);
     text-decoration: none;
     padding: var(--space-sm);

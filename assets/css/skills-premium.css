@@ -1,0 +1,86 @@
+/* ==========================================
+   PREMIUM SKILLS SECTION
+   ========================================== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skill-category {
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.skill-item span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-medium);
+}
+
+.skill-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-fill {
+    height: 100%;
+    width: var(--skill-width, 0);
+    background: var(--gradient-primary);
+    border-radius: 10px;
+    transition: width 1s ease 0.3s;
+    animation: fillBar 1.5s ease forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--skill-width);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
